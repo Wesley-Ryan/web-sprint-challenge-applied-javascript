@@ -47,6 +47,9 @@ const cardMaker = (article) => {
   imgContainer.appendChild(image);
   author.appendChild(credit);
 
+  card.addEventListener("click", () => {
+    console.log(article.headline);
+  });
   return card;
 };
 
